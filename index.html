@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>লোন ফর্ম</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>💳 লোন আবেদন ফর্ম</h2>
+
+    <label>📅 মেয়াদ (মাস):</label>
+    <select id="duration">
+      <option value="3">৩ মাস</option>
+      <option value="6">৬ মাস</option>
+      <option value="9">৯ মাস</option>
+      <option value="12">১২ মাস</option>
+      <option value="18">১৮ মাস</option>
+      <option value="24">২৪ মাস</option>
+    </select>
+
+    <label>💰 লোনের অর্থ:</label>
+    <input type="number" id="amount" placeholder="লোনের পরিমাণ লিখুন" required>
+
+    <label>📄 ব্যবহারের কারণ:</label>
+    <input type="text" id="reason" placeholder="লোন নেওয়ার কারণ" required>
+
+    <label>মাসিক সুদ:</label>
+    <input type="text" id="income" placeholder="আপনার মাসিক আয় (ঐচ্ছিক)">
+
+    <p id="interest-info">🌐 মোট ফেরতযোগ্য: <span id="total">৳0</span></p>
+
+    <button onclick="submitLoan()">✅ আবেদন করুন</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
